@@ -1,0 +1,39 @@
+<x-guest-layout>
+    <x-auth-card>
+        <x-slot name="logo">
+            <a href="/" style="font-size: 2em; font-weight: bold;">
+                <span>HARE</span><span style="color:#0275d8;">K</span><span style="color:#0275d8; text-emphasis-style: dot;
+    text-emphasis-position: under left;
+    -webkit-text-emphasis-style: dot;
+    -webkit-text-emphasis-position: under;">RSN</span><span style="color:#0275d8;">A</span><span>BLISS</span>&nbsp;
+            </a>
+        </x-slot>
+
+        <div class="mb-4 text-sm text-gray-600">
+            {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+        </div>
+
+        <!-- Validation Errors -->
+        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+
+        <h2 class="text-4xl font-bold text-center">Admin Confirm Password</h2>
+
+        <form method="POST" action="{{ route('admin.password.confirm') }}">
+            @csrf
+
+            <!-- Password -->
+            <div>
+                <x-label for="password" :value="__('Password')" />
+
+                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required
+                    autocomplete="current-password" />
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <x-button>
+                    {{ __('Confirm') }}
+                </x-button>
+            </div>
+        </form>
+    </x-auth-card>
+</x-guest-layout>
