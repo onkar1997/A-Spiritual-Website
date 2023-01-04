@@ -1,6 +1,7 @@
 # harekrsnabliss.com
 
-##Tech Stack: Html,Css,Bootstrap,Ajax,Php,Laravel,Mysql DB.
+## Tech Stack: Html,Css,Bootstrap,Ajax,Php,Laravel,Mysql DB.
+## Features: User Authentication, UserDashboard, Ecommerce functionality in Shop Section, Pagination, Admin Panel, Admin Dashboard, Admin Crud Functionality.
 
 ### A spiritual website with where user can read spiritual stories related to Lord Krishna, they can watch videos like sankirtan and all aartis. Users can also shop for their home temple from the shop section and pay. User can send message or give feedback.
 
